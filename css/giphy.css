@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+
+*{
+    font-family: 'Baloo Bhai', cursive;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-gif{
+    width: 100vw;
+    text-align: center;
+}
+
+.gifs{
+    margin: 5em 5em 5em 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 5px;
+}
+
+h2{
+    background-color: aqua;
+}
+
+#load-more{
+    font-size: 3em;
+    border: none;
+    color: white;
+    background-color: red;
+    display: none;
+}
+
+.more-button{
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text]{
+    min-width: 70vw;
+}
+
+input[type=submit]{
+    min-width: 10vw;
+}
+
+#search-gifs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+
+#search{
+    background-color: red;
+    border: none;
+}

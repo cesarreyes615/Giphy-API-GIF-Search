@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <link rel = "stylesheet" href = "css/giphy.css">
+            <script src="https://kit.fontawesome.com/2a511d572b.js"></script>
+    </head>
+
+    <body>
+        <div class = "search-bar">
+            <form id = "search-gifs">
+                <input type = "text" placeholder="Search GIFs...">
+                <button id = "search" type = "submit"><i class="fas fa-search fa-3x" style="color:white;"></i></button>
+            </form>
+        </div>
+        <div class="container-gif container-for-trending">
+            <h1>Trending</h1>
+            <div class = "gifs trending-gifs">
+            </div>
+        </div>
+        <div class = "container-gif container-for-searched">
+            <h1>Your Search</h1>
+            <div class = "gifs searched-gifs">
+            </div>
+            <div class = 'more-button'>
+                <button id = "load-more">Load More</button>
+            </div>
+            
+        </div>
+        <script src = "js/gif.js"></script>
+    </body>
+
+</html>
