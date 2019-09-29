@@ -4,7 +4,6 @@ var giphyTrending = $.get(
   "https://api.giphy.com/v1/gifs/trending?api_key=K6njTdQT89YOSYh0hr7AoZZAlaMYw61M&limit=5"
 );
 giphyTrending.done(function(response) {
-  console.log("success got data", response);
   var gifs = response.data;
 
   var i;
@@ -23,7 +22,6 @@ document.getElementById("search").addEventListener("click", function(e) {
     `https://api.giphy.com/v1/gifs/search?api_key=K6njTdQT89YOSYh0hr7AoZZAlaMYw61M&q=${searchBarText}&limit=10&rating=g`
   );
   giphySearch.done(function(response) {
-    console.log("success got data", response);
     var giphySearchedData = response.data;
     var searchedGifsContainer = document.querySelector(".searched-gifs");
     searchedGifsContainer.innerHTML = "";
@@ -42,7 +40,6 @@ document.getElementById("load-more").addEventListener("click", () => {
     `https://api.giphy.com/v1/gifs/search?api_key=K6njTdQT89YOSYh0hr7AoZZAlaMYw61M&q=${searchBarText}&limit=15&offset=10&rating=g`
   );
   giphySearch.done(function(response) {
-    console.log("success got data", response);
     var giphySearchedData = response.data;
     var searchedGifsContainer = document.querySelector(".searched-gifs");
     var i;
